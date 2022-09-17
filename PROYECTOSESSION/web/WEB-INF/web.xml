@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LogicaServlet</servlet-name>
+        <servlet-class>Servlet.LogicaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>cerrarSesionServlet</servlet-name>
+        <servlet-class>Servlet.cerrarSesionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogicaServlet</servlet-name>
+        <url-pattern>/LogicaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>cerrarSesionServlet</servlet-name>
+        <url-pattern>/cerrarSesionServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            1
+        </session-timeout>
+    </session-config>
+</web-app>
